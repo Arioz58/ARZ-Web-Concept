@@ -114,7 +114,6 @@ header.sticky ul li a:hover{
     grid-column: 1;
     grid-row: 1;
     transition: 0.6s;
-    display: none;
 }
 
 .circle2{

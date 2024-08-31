@@ -100,16 +100,26 @@ header.sticky ul li a:hover{
     justify-content: center;
     transition: 0.6s;
 }
+
+.circles{
+    grid-area: 1/1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    scale: 0.9;
+    animation: rotation 10s infinite linear;
+    filter: blur(300px);
+}
+
 .circle1{
     position: relative;
-    top: -400px;
-    margin-top: 150px;
-    width: 1000px;
-    height: 1000px;
+    top: -250px;
+    grid-area: 1/1;
+    width: 800px;
+    height: 800px;
     border-radius: 50%;
     background-color: #3935D2;
     scale: 1.5;
-    filter: blur(600px);
     opacity: 0.4;
     grid-column: 1;
     grid-row: 1;
@@ -118,36 +128,30 @@ header.sticky ul li a:hover{
 
 .circle2{
     position: relative;
-    left: -600px;
-    top: 300px;
-    width: 1000px;
-    height: 1000px;
+    top: 400px;
+    left: 400px;
+    grid-area: 1/1;
+    width: 800px;
+    height: 800px;
     border-radius: 50%;
     background-color: #DE8C37;
     scale: 1.5;
-    filter: blur(600px);
     opacity: 0.4;
-    grid-column: 1;
-    grid-row: 1;
     transition: 0.6s;
-    display: none;
 }
 
 .circle3{
     position: relative;
-    left: 600px;
-    top: 300px;
-    width: 1000px;
-    height: 1000px;
+    top: 400px;
+    left: -400px;
+    grid-area: 1/1;
+    width: 800px;
+    height: 800px;
     border-radius: 50%;
     background-color: #EE0EF2;
     scale: 1.5;
-    filter: blur(600px);
     opacity: 0.4;
-    grid-column: 1;
-    grid-row: 1;
     transition: 0.6s;
-    display: none;
 }
 
 .main_grid{
@@ -155,6 +159,7 @@ header.sticky ul li a:hover{
     width: 100%;
     grid-column: 1;
     grid-row: 1;
+    z-index: 2;
 }
 
 .banner p{
@@ -164,6 +169,7 @@ header.sticky ul li a:hover{
     text-align: center;
     grid-area: 1/1;
     transition: 0.6s;
+    z-index: 2;
 }
 .main_text_top{
     display: flex;
@@ -193,6 +199,7 @@ header.sticky ul li a:hover{
 }
 
 .competences h1{
+    z-index: 2;
     color: #ffffff;
     font-size: 3em;
     font-weight:bold;
@@ -202,6 +209,7 @@ header.sticky ul li a:hover{
 }
 
 .competences .competence{
+    z-index: 2;
     background-color: #1E243A;
     /*
     height: 610px;
@@ -223,5 +231,14 @@ header.sticky ul li a:hover{
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }

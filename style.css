@@ -219,6 +219,7 @@ header.sticky ul li a:hover{
     border-radius: 50px;
     transition: 0.5s;
     padding: 5%;
+    box-shadow: inset -5px 5px 15px -15px #ffffff;
 }
 
 .competences .competence h1{
@@ -231,11 +232,71 @@ header.sticky ul li a:hover{
     margin-top: 20px;
     line-height: 1.5;
     transition: 0.5s;
+    color: #ffffff;
 }
 
 .competences .competence:hover{
     scale: 1.05;
     transition: 0.5s;
+    box-shadow: inset -5px 5px 15px -10px #ffffff;
+    animation: breath 1s infinite ease-in-out;
+}
+
+footer{
+    margin-top: 50vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: minmax(400px, 600px) minmax(400px, 600px);
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+footer .logo_arz{
+    transition: 0.6s;
+    width: 140px;
+    height: 50px;
+    grid-column: span 2;
+    filter: brightness(0);
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+footer button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    background-color: #3935E8;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    transition: 0.6s;
+    margin: 0 auto;
+    box-shadow: 0 0 25px #1bc8fd;
+}
+
+footer .bottom_contact{
+    height: 200px;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+footer .cc{
+    margin: 0 auto;
+    grid-column: span 2;
+}
+
+footer button:hover{
+    background-color: #27cdff;
+    animation: breath 1s infinite ease-in-out;
 }
 
 @keyframes breath{
@@ -243,7 +304,7 @@ header.sticky ul li a:hover{
         transform: scale(1);
     }
     50%{
-        transform: scale(1.5);
+        transform: scale(1.02);
     }
     100%{
         transform: scale(1);

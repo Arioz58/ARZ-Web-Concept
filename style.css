@@ -9,6 +9,7 @@
 body{
     font-family: 'Roboto Mono', monospace;
     background-color: #04091A;
+    overflow-x: hidden;
 }
 
 main{
@@ -102,6 +103,7 @@ header.sticky ul li a:hover{
 }
 
 .circles{
+    position: absolute;
     grid-area: 1/1;
     display: grid;
     grid-template-columns: 1fr;
@@ -211,16 +213,12 @@ header.sticky ul li a:hover{
 .competences .competence{
     z-index: 2;
     background-color: #1E243A;
-    /*
     height: 610px;
     width: 80%;
-    */
     border-radius: 50px;
-    margin: 0 auto;
-    /*
-    box-shadow: 0 0 1000px #242188;
-    */
 }
+
+
 
 @keyframes breath{
     0%{

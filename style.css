@@ -299,6 +299,112 @@ footer button:hover{
     animation: breath 1s infinite ease-in-out;
 }
 
+/* mobile */
+
+@media screen and (max-width: 768px){
+    .circles{
+        top: -10px;
+        scale: 0.25;
+    }
+
+    html, body {
+        overflow-x: hidden;
+      }
+    body {
+        position: relative
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    header.sticky{
+        background-color: #f5f5f5;
+        padding: 0px 20px;
+    }
+
+    header .logo_arz{
+        width: 70px;
+        height: 25px;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header .material-symbols-outlined{
+        display: block;
+        cursor: pointer;
+        scale: 0.8;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        border: none;
+    }
+    
+    .banner p, .main_text_top{
+        position: relative;
+        top: 50px;
+        font-size: 5vw;
+    }
+    .main_text_top{
+        margin-top: 100px;
+    }
+    .main_grid{
+        margin-top: 200px;
+    }
+
+    .competences{
+        margin: 20px;
+        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .competences h1{
+        font-size: 2.5em;
+    }
+
+    .competences .competence{
+        height: 400px;
+    }
+
+    .competences .competence h1{
+        font-size: clamp(30px,1.5vw,35px);
+    }
+
+    .competences .competence p{
+        font-size: clamp(15px,0.8vw,35px);
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .logo_arz{
+        margin-bottom: 20px;
+    }
+
+    footer button{
+        width: 150px;
+        height: 50px;
+        font-size: 1.2em;
+        margin: 20px 0;
+    }
+
+    footer .bottom_contact{
+        font-size: 1.2em;
+    }
+
+    footer .cc{
+        margin: 20px 0;
+        height: 50px;
+    }
+}
+
 @keyframes breath{
     0%{
         transform: scale(1);

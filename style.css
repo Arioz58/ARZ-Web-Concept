@@ -371,7 +371,7 @@ footer button:hover{
     }
 
     .competences .competence p{
-        font-size: clamp(20px,0.8vw,35px);
+        font-size: clamp(15px,0.8vw,35px);
     }
 
     footer{
@@ -399,6 +399,7 @@ footer button:hover{
     footer .cc{
         margin: 20px 0;
         height: 50px;
+        text-align: center;
     }
 }
 

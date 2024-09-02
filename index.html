@@ -10,13 +10,20 @@
 <body>
     <header>
         <a href="index.html"><img src="images/LOGOARZ.png" class="logo_arz" alt="logo"></a>
+        <ul class="sidebar">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
         <ul>
             <li><a href="index.html">Acceuil</a></li>
             <li><a href="about.html">À Propos</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Contact</a></li>
         </ul>
-        <button class="material-symbols-outlined">
+        
+        <button onclick="opensidebar()" class="material-symbols-outlined">
             menu
         </button>
     </header>
@@ -43,6 +50,16 @@
                     header.classList.remove("sticky");
                 }
             }
+
+            function opensidebar() {
+                const sidebar = document.querySelector(".sidebar")
+                if (sidebar.style.top === "-200px") {
+                    sidebar.style.top = "0px";
+                } else {
+                sidebar.style.top = "-200px";
+                }
+            }
+
             </script>
         </section>
         <section class="competences">

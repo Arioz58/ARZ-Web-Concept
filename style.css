@@ -17,6 +17,10 @@ main{
     height: 100%;
 }
 
+.sidebar{
+    display: none;
+}
+
 header{
     position: fixed;
     width: 100%;
@@ -25,7 +29,7 @@ header{
     align-items: center;
     transition: 0.6s;
     padding: 40px 100px;
-    z-index: 10000000;
+    z-index: 3;
 }
 
 header .logo_arz{
@@ -340,6 +344,32 @@ footer button:hover{
         color: rgb(255, 255, 255);
         background-color: transparent;
         border: none;
+    }
+
+    .sidebar{
+        z-index: 1;
+        margin-top: 15%;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        gap: 0px;
+        justify-content: space-between;
+        align-items: center;
+        top: -200px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height:8%;
+        border: 1px solid rgb(92, 92, 92);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        font-size: 7px;
+        padding: 5px;
+        transition: 0.6s ease-in-out;
+    }
+
+    header.sticky ul li a {
+        color: #ffffff;
     }
     
     .banner p, .main_text_top{

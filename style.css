@@ -308,6 +308,7 @@ footer button:hover{
 @media screen and (max-width: 768px){
     .circles{
         scale: 0.25;
+        right: 10px;
     }
 
     html, body {

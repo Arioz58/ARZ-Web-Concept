@@ -115,6 +115,7 @@ header.sticky ul li a:hover{
     scale: 0.9;
     animation: rotation 10s infinite linear;
     filter: blur(300px);
+    z-index: 1;
 }
 
 .circle1{
@@ -177,6 +178,7 @@ header.sticky ul li a:hover{
     transition: 0.6s;
     z-index: 2;
 }
+
 .main_text_top{
     display: flex;
     justify-content: center;
@@ -191,21 +193,50 @@ header.sticky ul li a:hover{
     color: #27cdff;
 }
 
-.banner button{
+.banner .btn_cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    transition: 0.6s;
+}
+
+.banner .btn_cont button{
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
     font-family: 'Roboto Mono', monospace;
     font-size: 2vw;
     width: 40%;
-    height: 10%;
+    height: 120px;
     border-radius: 10px;
     background-color: transparent;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgb(92, 92, 92);
+    border: 1px solid #11235e;
+    background-color: #04091A;
     z-index: 2;
     color: #ffffff;
     text-align: center;
     transition: 0.6s;
     animation: breath 1s infinite ease-in-out;
+}
+
+.banner .btn_cont p {
+    margin-left: 30px;
+    color: #ffffff;
+    font-size: 0.7vw;
+    font-weight: lighter;
+    text-align: left;
+    width: 45%;
+    grid-column: 1;
+    grid-row: 2;
+    transition: 0.6s;
+    position: relative;
+    z-index: 2;
 }
 
 .competences{

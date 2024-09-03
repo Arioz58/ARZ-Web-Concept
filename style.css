@@ -98,8 +98,8 @@ header.sticky ul li a:hover{
 
 .banner{
     display: grid;
-    grid-row: 1fr 1fr;
-    grid-template-columns: minmax(500px,50%) ;
+    grid-row: 1fr;
+    grid-template-columns: minmax(500px,50%) 1fr ;
     place-items: center;
     align-items: center;
     justify-content: center;
@@ -162,7 +162,7 @@ header.sticky ul li a:hover{
 
 .main_grid{
     margin-top: 100px;
-    width: 100%;
+    width: 90%;
     grid-column: 1;
     grid-row: 1;
     z-index: 2;
@@ -170,7 +170,7 @@ header.sticky ul li a:hover{
 
 .banner p{
     color: #ffffff;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     font-weight: lighter;
     text-align: center;
     grid-area: 1/1;
@@ -189,6 +189,23 @@ header.sticky ul li a:hover{
 .main_text_top b{
     font-weight: bold;
     color: #27cdff;
+}
+
+.banner button{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2vw;
+    width: 40%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgb(92, 92, 92);
+    z-index: 2;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.6s;
+    animation: breath 1s infinite ease-in-out;
 }
 
 .competences{
@@ -348,13 +365,12 @@ footer button:hover{
     }
 
     .sidebar{
+        gap: 5px;
         z-index: 1;
         margin-top: 15%;
         display: flex;
         flex-direction: row;
         position: fixed;
-        gap: 0px;
-        justify-content: space-between;
         align-items: center;
         top: -200px;
         left: 50%;
@@ -367,7 +383,7 @@ footer button:hover{
         font-size: 5px;
         padding: 5px;
         transition: 0.6s ease-in-out;
-        -webkit-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(5px);
     }
 
     header.sticky ul li a {

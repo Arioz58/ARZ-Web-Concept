@@ -98,7 +98,7 @@ header.sticky ul li a:hover{
 
 .banner{
     display: grid;
-    grid-row: 1fr;
+    grid-row: 1fr 1fr;
     grid-template-columns: minmax(500px,50%) ;
     place-items: center;
     align-items: center;
@@ -367,6 +367,7 @@ footer button:hover{
         font-size: 5px;
         padding: 5px;
         transition: 0.6s ease-in-out;
+        -webkit-backdrop-filter: blur(10px);
     }
 
     header.sticky ul li a {
@@ -376,6 +377,28 @@ footer button:hover{
     .banner p, .main_text_top{
         font-size: 5vw;
     }
+
+    .banner button{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.2em;
+        width: 200px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgb(92, 92, 92);
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
+        position: relative;
+        top: 180px;
+        color: #ffffff;
+        text-align: center;
+        transition: 0.6s;
+        animation: breath 1s infinite ease-in-out;
+    }
+
     .main_text_top{
         margin-top: 100px;
     }
@@ -393,7 +416,8 @@ footer button:hover{
     }
 
     .competences .competence{
-        height: 400px;
+        width: auto;
+        height: 300px;
     }
 
     .competences .competence h1{

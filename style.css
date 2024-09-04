@@ -212,7 +212,7 @@ header.sticky ul li a:hover{
     font-size: 2vw;
     width: 40%;
     height: 120px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: transparent;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -225,6 +225,9 @@ header.sticky ul li a:hover{
     animation: breath 1s infinite ease-in-out;
 }
 
+.banner .btn_cont button:hover{
+    cursor: pointer;
+}
 .banner .btn_cont p {
     margin-left: 30px;
     color: #ffffff;
@@ -268,7 +271,7 @@ header.sticky ul li a:hover{
     background-color: #1E243A;
     height: 610px;
     width: 80%;
-    border-radius: 50px;
+    border-radius: 30px;
     transition: 0.5s;
     padding: 5%;
     box-shadow: inset -5px 5px 15px -15px #ffffff;
@@ -407,7 +410,7 @@ footer button:hover{
         left: 50%;
         transform: translateX(-50%);
         width: 85%;
-        height:8%;
+        height:70px;
         border: 1px solid rgb(92, 92, 92);
         border-radius: 10px;
         backdrop-filter: blur(10px);
@@ -420,12 +423,27 @@ footer button:hover{
     header.sticky ul li a {
         color: #ffffff;
     }
+
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .banner .btn_cont p {
+        display: none;
+    }
     
     .banner p, .main_text_top{
         font-size: 5vw;
     }
 
-    .banner button{
+    .banner .btn_cont{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .banner .btn_cont button{
         font-family: 'Roboto Mono', monospace;
         font-size: 1.2em;
         width: 200px;

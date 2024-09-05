@@ -28,7 +28,6 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 40px 100px;
     z-index: 3;
 }
 
@@ -75,8 +74,7 @@ header ul li a:hover{
 }
 
 header.sticky{
-    background-color: #f5f5f5;
-    padding: 20px 100px;
+    background-color: #f5f5f5; 
 }
 
 header.sticky .logo_arz{

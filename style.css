@@ -22,11 +22,12 @@ main{
 }
 
 header{
+    filter: drop-shadow(0 30px 3rem rgba(0, 0, 0, 0.7));
     margin-top: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     position: fixed;
     width: 50vw;
-    height: 80px;
+    height: 70px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -214,6 +215,7 @@ header.sticky ul li a:hover{
     grid-row: 1;
     font-family: 'Roboto Mono', monospace;
     font-size: 2vw;
+    filter: drop-shadow(0 30px 3rem rgba(0, 0, 0, 0.5));
     width: 40%;
     height: 120px;
     border-radius: 20px;
@@ -375,6 +377,7 @@ footer button:hover{
 
     header{
         width: 90vw;
+        height: 50px;
         display: flex;
         justify-content: space-between;
         padding: 0 20px;

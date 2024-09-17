@@ -55,13 +55,16 @@
             }
             </script>
         </section>
-        <section class="contact_form">
+        <form class="contact_form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="5a2b36ab-c6e3-4c3c-94e4-70a60a53f2da">
             <input type="text" name="name" id="name" placeholder="Nom et Prenom">
             <input type="email" name="email" id="email" placeholder="Email">
             <input type="text" name="subject" id="subject" placeholder="Sujet de votre message">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message"></textarea>
-            <button onclick="sendEmail();">Envoyer</button>
-        </section>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <input type="hidden" name="redirect" value="https://arzwebconcept.com/contact.html">
+            <button onclick="">Envoyer</button>
+        </form>
     </main>
     <footer>
         <img src="images/LOGOARZ.png" class ="logo_arz" alt="logo">
@@ -72,20 +75,5 @@
         <p class="cc">© 2021 ARZ Web Concept. Tous droits réservés.</p>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "@gmail.com",
-                Password: "",
-                To: '@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: document.getElementById("subject").value,
-                Body: document.getElementById("message").value
-            }).then(
-                message => alert("mail sent successfully")
-            );
-        }
-    </script>
 </body>
 </html>
